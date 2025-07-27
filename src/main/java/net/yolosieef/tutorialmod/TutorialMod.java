@@ -2,6 +2,7 @@ package net.yolosieef.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.yolosieef.tutorialmod.block.ModBlocks;
 import net.yolosieef.tutorialmod.item.ModItemGroups;
 import net.yolosieef.tutorialmod.item.ModItems;
@@ -19,5 +20,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 	}
 }
