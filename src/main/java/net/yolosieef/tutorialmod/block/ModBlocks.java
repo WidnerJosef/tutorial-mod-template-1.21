@@ -13,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.yolosieef.tutorialmod.TutorialMod;
+import net.yolosieef.tutorialmod.block.custom.MagicBlock;
 
 public class ModBlocks {
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
@@ -38,6 +39,9 @@ public class ModBlocks {
                             .strength(4.0f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1.0f).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

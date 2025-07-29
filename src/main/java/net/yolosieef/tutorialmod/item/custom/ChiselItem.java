@@ -34,7 +34,7 @@ public class ChiselItem extends Item {
         Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
 
         if (CHISEL_MAP.containsKey(clickedBlock)) {
-            if (!world.isClient()) {
+            if (!world.isClient()) {    //should only work if not on server
                 world.setBlockState(context.getBlockPos(), CHISEL_MAP.get(clickedBlock).getDefaultState());
 
                 //damage item in main hand
