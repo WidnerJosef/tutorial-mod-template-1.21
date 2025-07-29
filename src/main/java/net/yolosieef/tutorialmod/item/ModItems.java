@@ -12,6 +12,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.yolosieef.tutorialmod.TutorialMod;
 import net.yolosieef.tutorialmod.item.custom.BeerItem;
+import net.yolosieef.tutorialmod.item.custom.ChiselItem;
 import net.yolosieef.tutorialmod.item.custom.WineItem;
 
 import java.util.List;
@@ -19,6 +20,8 @@ import java.util.List;
 public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));  //name: all small letters and underscores allowed
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
+
+    public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
 
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)) {
         @Override
@@ -48,6 +51,11 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(PINK_GARNET);
             fabricItemGroupEntries.add(RAW_PINK_GARNET);
+            fabricItemGroupEntries.add(CHISEL);
+            fabricItemGroupEntries.add(CAULIFLOWER);
+            fabricItemGroupEntries.add(BEER);
+            fabricItemGroupEntries.add(WINE);
+            fabricItemGroupEntries.add(STARLIGHT_ASHES);
         });
     }
 }
