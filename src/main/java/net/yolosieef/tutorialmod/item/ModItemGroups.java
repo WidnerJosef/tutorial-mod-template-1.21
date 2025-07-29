@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_PINK_GARNET);
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.BEER);
+                        entries.add(ModItems.WINE);
                         entries.add(ModItems.STARLIGHT_ASHES);
                     }))
                     .build());

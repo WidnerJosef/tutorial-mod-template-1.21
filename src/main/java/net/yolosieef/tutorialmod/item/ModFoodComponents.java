@@ -16,4 +16,10 @@ public class ModFoodComponents {
             .saturationModifier(0.25f)
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 1.0f)    //20 ticks per second -> 0,05s per tick
             .build();
+
+    public static final FoodComponent WINE = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(0.25f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 600), 1.0f)
+            .build();
 }

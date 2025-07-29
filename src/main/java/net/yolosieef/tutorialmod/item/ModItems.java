@@ -12,6 +12,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.yolosieef.tutorialmod.TutorialMod;
 import net.yolosieef.tutorialmod.item.custom.BeerItem;
+import net.yolosieef.tutorialmod.item.custom.WineItem;
 
 import java.util.List;
 
@@ -33,6 +34,7 @@ public class ModItems {
     });
 
     public static final Item BEER = registerItem("beer", new BeerItem(new Item.Settings().food(ModFoodComponents.BEER)));
+    public static final Item WINE = registerItem("wine", new WineItem(new Item.Settings().food(ModFoodComponents.WINE)));
 
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
