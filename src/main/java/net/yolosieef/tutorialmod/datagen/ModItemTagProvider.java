@@ -17,12 +17,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(ModItems.PINK_GARNET)
-                .add(ModItems.RAW_PINK_GARNET)
-                .add(ModItems.CHISEL)
-                .add(ModItems.CAULIFLOWER)
-                .add(ModItems.BEER)
-                .add(ModItems.WINE)
-                .add(ModItems.STARLIGHT_ASHES);
+                .add(ModItems.PINK_GARNET);
     }
 }
